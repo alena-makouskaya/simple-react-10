@@ -82,6 +82,7 @@ export const ControlledSelect = () => {
   let [parentValue, setParentValue] = useState<string | undefined>(undefined);
 
   const onChange = (e: ChangeEvent<HTMLSelectElement>) => {
+    console.log(e.currentTarget.value);
     setParentValue(e.currentTarget.value);
   };
 
